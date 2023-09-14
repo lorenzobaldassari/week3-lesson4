@@ -1,16 +1,3 @@
-const Extract = function () {
-  const min = 77;
-  const max = 0;
-
-  const Random = Math.floor(Math.random() * (max - min + 1)) + min;
-  let ChosenElemnt = document.getElementsByClassName(`${Random}`)[0];
-  if (ChosenElemnt.classList.value !== `number ${Random} chosen`) {
-    ChosenElemnt.classList.add(`chosen`);
-    console.log(`numero estratto`, Random);
-  } else {
-    Extract();
-  }
-};
 // const Extract2 = function () {
 //   const min = 77;
 //   const max = 0;
@@ -23,6 +10,26 @@ const Extract = function () {
 //     Extract();
 //   }
 // };
+
+const Extract = function () {
+  const min = 77;
+  const max = 0;
+  const Random = Math.floor(Math.random() * (max - min + 1)) + min;
+  let ChosenElemnt = document.getElementsByClassName(`${Random}`)[0];
+  let ChosenElemnt2 = document.getElementsByClassName(
+    `playersTab ${Random}`
+  )[0];
+  console.log(ChosenElemnt2);
+  if (ChosenElemnt.classList.value !== `number ${Random} chosen`) {
+    ChosenElemnt.classList.add(`chosen`);
+    if (Random < 25) {
+      ChosenElemnt2.classList.add(`chosen`);
+    }
+    console.log(`numero estratto`, Random);
+  } else {
+    Extract();
+  }
+};
 
 const arrayOfNumber = [];
 

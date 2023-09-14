@@ -1,5 +1,8 @@
 body {
-  background-color: #6b6767a8;
+  background-image: url(https://t4.ftcdn.net/jpg/01/31/15/51/360_F_131155172_4ZVdaT7YF5yJHqircjy59DDxV6aWFds9.jpg);
+  background-image: 100%;
+  background-size: 400em;
+  background-repeat: no-repeat;
 }
 .container {
   width: 80%;
@@ -13,6 +16,7 @@ body {
   margin: 0.2em;
   width: 20px;
   border-radius: 100px;
+  font-weight: bold;
 }
 .chosen {
   color: rgb(0, 0, 0);
