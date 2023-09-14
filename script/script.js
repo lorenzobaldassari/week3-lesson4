@@ -16,14 +16,16 @@ const Extract = function () {
   const max = 0;
   const Random = Math.floor(Math.random() * (max - min + 1)) + min;
   let ChosenElemnt = document.getElementsByClassName(`${Random}`)[0];
-  let ChosenElemnt2 = document.getElementsByClassName(
-    `playersTab ${Random}`
-  )[0];
-  console.log(ChosenElemnt2);
+  let ChosenElemnt2 = document.getElementsByClassName(`playersTab ${Random}`);
+  const arrayOfElements = Array.from(ChosenElemnt2);
+
   if (ChosenElemnt.classList.value !== `number ${Random} chosen`) {
-    ChosenElemnt.classList.add(`chosen`);
-    if (Random < 25) {
-      ChosenElemnt2.classList.add(`chosen`);
+  }
+  ChosenElemnt.classList.add(`chosen`);
+  if (Random < 25) {
+    // ChosenElemnt2.classList.add(`chosen`);
+    for (i = 0; i < arrayOfElements.length; i++) {
+      arrayOfElements[i].classList.add(`chosen`);
     }
     console.log(`numero estratto`, Random);
   } else {

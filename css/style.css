@@ -3,6 +3,8 @@ body {
   background-image: 100%;
   background-size: 400em;
   background-repeat: no-repeat;
+  max-width: 4000px;
+  min-width: 4000px;
 }
 .container {
   width: 80%;
@@ -38,6 +40,9 @@ h1 {
   background-color: black;
   margin: 1em 0 1em 0;
   border-radius: 25px;
+}
+#button2 {
+  font-size: 4em;
 }
 
 .playersTab {
