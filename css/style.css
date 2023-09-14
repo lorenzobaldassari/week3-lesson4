@@ -1,0 +1,45 @@
+body {
+  background-color: #6b6767a8;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.number {
+  font-size: 2em;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 2em;
+  margin: 0.2em;
+  width: 20px;
+}
+.chosen {
+  color: red;
+  background-color: violet;
+}
+h1 {
+  font-size: 6em;
+  font-weight: bold;
+  text-align: center;
+}
+#tab {
+  margin: auto;
+}
+#button,
+#button2 {
+  color: white;
+  font-size: 9em;
+  background-color: black;
+}
+
+.playersTab {
+  font-size: 2em;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 1em;
+  margin: 0.2em;
+  width: 10px;
+}
+#players {
+  width: 25%;
+}
