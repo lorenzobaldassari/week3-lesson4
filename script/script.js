@@ -50,11 +50,14 @@ createTable();
 
 const playerTable = function () {
   const table1 = document.getElementById(`players`);
+  const divco = document.createElement(`div`);
   for (i = 0; i < 24; i++) {
     const case2 = document.createElement(`div`);
     case2.innerHTML = `<p>${i + 1}</p>`;
     case2.classList.add(`playersTab`);
     case2.classList.add(`${i + 1}`);
-    table1.appendChild(case2);
+    divco.classList.add(`divco`);
+    divco.appendChild(case2);
+    table1.appendChild(divco);
   }
 };
