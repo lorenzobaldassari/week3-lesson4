@@ -20,12 +20,12 @@ const Extract = function () {
   const arrayOfElements = Array.from(ChosenElemnt2);
 
   if (ChosenElemnt.classList.value !== `number ${Random} chosen`) {
-  }
-  ChosenElemnt.classList.add(`chosen`);
-  if (Random < 25) {
-    // ChosenElemnt2.classList.add(`chosen`);
-    for (i = 0; i < arrayOfElements.length; i++) {
-      arrayOfElements[i].classList.add(`chosen`);
+    ChosenElemnt.classList.add(`chosen`);
+    if (Random < 25) {
+      // ChosenElemnt2.classList.add(`chosen`);
+      for (i = 0; i < arrayOfElements.length; i++) {
+        arrayOfElements[i].classList.add(`chosen`);
+      }
     }
     console.log(`numero estratto`, Random);
   } else {
